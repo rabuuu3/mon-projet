@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonage') {
             steps {
-                git 'https://github.com/rabuuu3/mon-projet.git'
+                git branch: 'main', url: 'https://github.com/rabuuu3/mon-projet.git'
             }
         }
         stage('Build + Tests + Sécurité') {
